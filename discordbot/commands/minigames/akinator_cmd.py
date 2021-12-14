@@ -18,3 +18,5 @@ class AkinatorCommand(Command):
 
         session = SinglePlayerSession(message, "akinator", AkinatorDiscord, context.author)
         await cls.bot.game_manager.start_session(session)
+
+!akinator !connect4 !chess !flood !mastermind !hangman !scrabble !quiz !blackjack 
