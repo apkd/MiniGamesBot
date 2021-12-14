@@ -45,9 +45,9 @@ class MiniGamesBot(Bot):
 
         # load commands
         self.categories = [
+            Minigames,
             Miscellaneous,
-            Developer,
-            Minigames
+            Developer
         ]
         self.load_commands()
 

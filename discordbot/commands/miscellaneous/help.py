@@ -94,7 +94,7 @@ class HelpCommand(Command):
         else:
             prefix = cls.bot.prefix
 
-        content = "**__MiniGamesBot__**\n"
+        content = ""
         for i in range(len(cls.bot.categories)):
             if not cls.bot.categories[i].has_permission(context.author.id):
                 continue
