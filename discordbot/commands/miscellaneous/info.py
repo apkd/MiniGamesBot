@@ -32,11 +32,5 @@ class InfoCommand(Command):
                    "Unfinished games is the portion of losses where the 5 minute timer got reached. " \
                    "Use the **stats command** to ask for yours or another player's stats. " \
                    "Use the arrows to navigate through the **different periods**. "
-        content += "\n\n**__Links__**\n" \
-                   "Bot invite link: <https://discord.com/oauth2/authorize?client_id=704677903182594119&permissions=305216&scope=bot>\n" \
-                   "Leave a reaction or give a thumbs up if you like this bot here: <https://top.gg/bot/704677903182594119>\n" \
-                   "If you wish to make a donation: https://www.buymeacoffee.com/whuybrec\n" \
-                   "Github link: <https://github.com/whuybrec/whuybrec.github.io>\n" \
-                   "Invite to my server: https://discord.gg/hGeGsWp\n"
         content += f"\n*Uptime: {datetime.timedelta(seconds=round(time.time() - cls.bot.uptime))}*"
         await context.send(content)
