@@ -16,8 +16,7 @@ class InfoCommand(Command):
 
     @classmethod
     async def invoke(cls, context):
-        content = "**__MiniGamesBot__**\n" \
-                  "Use the **help command** to see the commands for this bot. " \
+        content = "Use the **help command** to see the commands for this bot. " \
                   "Administrators can set a **different prefix** for the bot. " \
                   "Use the **bug command** to notify me for potential bugs. " \
                   "You can also **join my server** to tell me about it in there. "
@@ -32,5 +31,4 @@ class InfoCommand(Command):
                    "Unfinished games is the portion of losses where the 5 minute timer got reached. " \
                    "Use the **stats command** to ask for yours or another player's stats. " \
                    "Use the arrows to navigate through the **different periods**. "
-        content += f"\n*Uptime: {datetime.timedelta(seconds=round(time.time() - cls.bot.uptime))}*"
         await context.send(content)
